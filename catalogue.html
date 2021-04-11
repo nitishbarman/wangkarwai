@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .logo{
+            height: 250px;
+            width: 18%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box{
+            height: 250px;
+            width: 30%;
+            margin-left: 30px;
+            margin-top: 50px;
+            margin-right: 30px;
+            transition: transform 2;
+        }
+        .box:hover{
+           transform: scale(1.3);
+        }
+        a{
+            text-decoration: none;
+            color: antiquewhite;
+            margin-right: 15px;
+        }
+        .movie{
+            color:white;
+            font-size:large; 
+            margin-top: 0px; 
+            margin-bottom: 0px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .year{
+            color:gray; 
+            font-size:small; 
+            margin-top: 0px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <p style="text-align:end;padding-right: 30px;">
+        <a href='/index.html' >CONTACT</a>
+        <a href="/index2.html">HOME</a>
+        <a href="/index3.html">X</a>
+    </p>
+    <div class="logo">
+        <img src='/images/Blue and Gold Fashion Logo (2).png' height="100%" width="100%">
+    </div>
+    <p style="color:azure; text-align: center;font-size:xx-large;">catalog</p>
+    <div class="container" style="margin-left: 20%; margin-right: 20%;">
+        <div class="box" >
+            <img src="/images/catalog page/happy together.jpg" width="100%" height="95%">
+            <p class='movie'>Happy Together</p>
+            <p class='year'>(2007)</p>
+        </div>
+        <div class="box" >
+            <img src="/images/catalog page/2046.jfif" width="100%" height="95%">
+            <p class="movie">2046</p>
+            <p class="year">(2004)</p>
+        </div>
+        <div class="box" >
+            <img src="/images/catalog page/days of being wild.jfif" width="100%" height="95%">
+            <p class="movie">Days if Being Wild</p>
+            <p class="year">(1990)</p>
+        </div>
+    </div>
+    <div class="container" style="margin-left: 20%; margin-right: 20%; margin-top: 20px;">
+        <div class="box" >
+            <img src="/images/catalog page/chunkling express.jpg" width="100%" height="95%">
+            <p class="movie">Chunking Express</p>
+            <p class="year">(1997)</p>
+        </div>
+        <div class="box" >
+            <img src="/images/catalog page/fallen angles.jfif" width="100%" height="95%">
+            <p class="movie">Fallen Angels</p>
+            <p class="year">(1997)</p>
+        </div>
+        <div class="box" >
+            <img src="/images/catalog page/in the  mood for love.jfif" width="100%" height="95%">
+            <p class="movie">In the Mood for Love</p>
+            <p class="year">(1997)</p>
+        </div>
+    </div>
+    <div class="container" style="margin-left: 20%; margin-right: 20%; margin-top: 20px;">
+        <div class="box" >
+            <img src="/images/catalog page/my blue berry nights.jfif" width="100%" height="95%">
+            <p class="movie">My Blueberry Nights</p>
+            <p class="year">(2007)</p>
+        </div>
+        <div class="box" >
+            <img src="/images/catalog page/ashes of the time.jfif" width="100%" height="95%">
+            <p class="movie">Ashes of Time</p>
+            <p class="year">(1994)</p>
+        </div>
+        <div class="box" >
+            <img src="/images/catalog page/as tears go by.jfif" width="100%" height="95%">
+            <p class="movie">As Tears go by</p>
+            <p class="year">(1994)</p>
+        </div>
+    </div>
+    <div style="background-color: rgb(59, 55, 55);text-align: center; margin-top: 100px; padding-top: 1px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <p style="font-size: 30px; color: antiquewhite;"> Sign up</p>
+        <p style="font-size: 25px; color: antiquewhite;">Subscribe to be informed about latest news and catalog</p>
+        <div class="container">
+            <input id='input' type="email" style=" width: 33%; border: 0px;float: left;margin-left: 32%;background-color: rgb(59, 55, 55);">
+            <img id='mail' src="/images/outline_email_white_24dp.png" >
+        </div>
+        <hr style="height:2px;width: 35%;color:black;background-color: black; border-width: 0px; float: left; margin-left: 32%;margin-right: 0px;">
+        <br>
+        <br>
+    </div>
+    <p style="margin-top: 6%;color: antiquewhite; margin-bottom: 2%; font-size:larger; text-align: center;">
+        <a href="#">FAQ</a>
+        <a href="#">Order track</a>
+        <a href="#">Policy</a>
+        <a href="#">Terms of Service</a>
+    </p>
+    <script>
+        document.getElementById("mail").addEventListener("click",random);
+        function random(){
+            document.getElementById("input").style.background='white';
+        }
+    </script>
+</body>
+</html>
